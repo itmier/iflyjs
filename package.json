@@ -1,0 +1,36 @@
+{
+  "name": "vite-build-ts",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Vite库的说明",
+  "main": "dist/vite-lib.js",
+  "types": "dist/type/main.d.ts",
+  "publisher": "itmier@126.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itmier/file-viewer-js.git"
+  },
+  "homepage": "https://github.com/itmier/file-viewer-js",
+  "author": "Tmier",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc && tsc-alias",
+    "preview": "vite preview",
+    "cz": "git add . && czg"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.3",
+    "@commitlint/config-conventional": "^17.4.3",
+    "@types/node": "^18.13.0",
+    "czg": "^1.4.1",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.2",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  }
+}
