@@ -1,18 +1,17 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-23 16:31:41
- * @LastEditTime: 2024-03-27 23:20:27
+ * @LastEditTime: 2024-03-27 23:39:25
  * @LastEditors: Tmier
- * @Description:
+ * @Description: 仅供测试使用
  *
  */
-// import * as BetterJs from '@/main'
-// export default BetterJs
-import { getRuntimeEnv, getValueType, isCorrectType, $, getDomPageXY } from '@/main'
+import { getRuntimeEnv, getValueType, isCorrectType, $, getDomPageXY } from '../dist/better-js'
 
-// console.log(isCorrectType(null, 'null'))
-// const env = getRuntimeEnv()
-// console.log(env)
+console.log(isCorrectType(null, 'null'))
+const env = getRuntimeEnv()
+console.log(env)
+console.log(getValueType('123'))
 
-// console.log($('body'))
+console.log($('body'))
 console.log(getDomPageXY('#domXY'))

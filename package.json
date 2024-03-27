@@ -1,17 +1,17 @@
 {
-  "name": "vite-build-ts",
+  "name": "better-js",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
-  "description": "Vite库的说明",
-  "main": "dist/vite-lib.js",
-  "types": "dist/type/main.d.ts",
+  "description": "更好用的JS函数库, 值得信任的JS函数库",
+  "main": "dist/better-js.js",
+  "types": "dist/types/main.d.ts",
   "publisher": "itmier@126.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itmier/file-viewer-js.git"
+    "url": "git+https://github.com/itmier/better-js.git"
   },
-  "homepage": "https://github.com/itmier/file-viewer-js",
+  "homepage": "https://github.com/itmier/better-js",
   "author": "Tmier",
   "license": "MIT",
   "files": [

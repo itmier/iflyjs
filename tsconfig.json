@@ -13,14 +13,14 @@
     "skipLibCheck": true,
     "noEmit": false,
     "declaration": true,
-    "declarationDir": "dist/type",
-    "outDir": "dist/type",
+    "declarationDir": "dist/types",
+    "outDir": "dist/types",
     "typeRoots": ["./types", "./node_modules/@types"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "example/**/*.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

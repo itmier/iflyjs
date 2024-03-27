@@ -13,8 +13,8 @@
     "skipLibCheck": true,
     "noEmit": false,
     "declaration": true,
-    "declarationDir": "dist/type",
-    "outDir": "dist/type",
+    "declarationDir": "dist/types",
+    "outDir": "dist/types",
     "typeRoots": ["./types", "./node_modules/@types"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
