@@ -1,15 +1,15 @@
 <!--
  * @Author: Tmier
  * @Date: 2024-03-25 20:57:14
- * @LastEditTime: 2024-03-25 22:27:34
+ * @LastEditTime: 2024-03-27 23:42:30
  * @LastEditors: Tmier
  * @Description:
  *
 -->
 
-## vite-build-ts
+## better-js
 
-这是一个处理 JS/TS/Vue 的模板库, 可以用来打包 JS 和写新知识的 Demo
+更好用的 JS 函数库, 值得信任的 JS 函数库
 
 ## 技术栈
 
