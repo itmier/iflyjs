@@ -1,7 +1,7 @@
 /*
  * @Author: Tmier
  * @Date: 2024-03-25 20:57:14
- * @LastEditTime: 2024-03-27 23:27:50
+ * @LastEditTime: 2024-03-28 19:40:44
  * @LastEditors: Tmier
  * @Description:
  *
@@ -22,8 +22,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
-      name: 'BetterJS', // 暴露的全局变量
-      fileName: 'better-js', // 输出的包文件名
+      name: 'HappyJS', // 暴露的全局变量
+      fileName: 'happy-js', // 输出的包文件名
       formats: ['es', 'umd']
     }
     // rollupOptions: {

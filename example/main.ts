@@ -6,7 +6,7 @@
  * @Description: 仅供测试使用
  *
  */
-import { getRuntimeEnv, getValueType, isCorrectType, $, getDomPageXY } from '../dist/better-js'
+import { getRuntimeEnv, getValueType, isCorrectType, $, getDomPageXY } from '../dist/happy-js'
 
 console.log(isCorrectType(null, 'null'))
 const env = getRuntimeEnv()

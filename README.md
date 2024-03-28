@@ -7,7 +7,7 @@
  *
 -->
 
-## better-js
+## happy-js
 
 更好用的 JS 函数库, 值得信任的 JS 函数库
 
