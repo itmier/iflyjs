@@ -6,6 +6,13 @@
   "description": "更好用的JS函数库, 值得信任的JS函数库",
   "main": "dist/iflyjs.js",
   "types": "dist/types/main.d.ts",
+  "module": "dist/iflyjs.js",
+  "exports": {
+    ".": {
+      "import": "./dist/iflyjs.js",
+      "require": "./dist/iflyjs.umd.cjs"
+    }
+  },
   "publisher": "itmier@126.com",
   "repository": {
     "type": "git",
