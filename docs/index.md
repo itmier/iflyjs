@@ -4,7 +4,7 @@ layout: home
 hero:
   name: IFlyJS
   text: 实用的JS函数工具库
-  tagline: 等你共建哦~...
+  tagline: 期待你的参与👉
   image:
     src: /logo.svg
     alt: IFlyJS
