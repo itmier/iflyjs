@@ -4,5 +4,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
+  },
+  "fileheader.configObj": {
+    "prohibitAutoAdd": ["json", "md", "yaml", "conf"]
   }
 }

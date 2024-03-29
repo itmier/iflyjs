@@ -1,26 +1,15 @@
-<!--
- * @Author: Tmier
- * @Date: 2024-03-28 22:44:52
- * @LastEditTime: 2024-03-28 22:47:12
- * @LastEditors: Tmier
- * @Description:
- *
--->
+# getValueType - 获取参数类型
 
-# 获取参数类型
-
-## 语法
+## 使用
 
 ```js
 import { getValueType } from 'iflyjs'
-console.log(getValueType(null))
+console.log(getValueType(null)) // output: 'null'
 ```
 
 ## 源码
 
-```js
+```ts
 const getValueType = (val: any) =>
   Object.prototype.toString.call(val).split(' ')[1].slice(0, -1).toLowerCase()
-
-export default getValueType
 ```
