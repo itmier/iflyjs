@@ -69,7 +69,7 @@ function generateTree(directory, isParent = true) {
         if (!CommonData) {
           tree.unshift({
             text: '通用',
-            collapsed: true,
+            collapsed: false,
             items: [
               {
                 text: fileName,

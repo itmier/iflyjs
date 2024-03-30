@@ -1,3 +1,11 @@
+/*
+ * @Author: Tmier
+ * @Date: 2024-03-28 21:46:22
+ * @LastEditTime: 2024-03-30 11:52:23
+ * @LastEditors: Tmier
+ * @Description:
+ *
+ */
 import { defineConfig } from 'vitepress'
 import sidebar from './sidebar/index'
 
@@ -27,10 +35,10 @@ export default defineConfig({
         text: '快速开始',
         link: '/'
       },
-      // {
-      //   text: '更新日志',
-      //   link: '/changelog'
-      // },
+      {
+        text: '安装与使用',
+        link: '/usage'
+      },
       ...sidebar.getSidebar()
     ],
     footer: {
