@@ -1,7 +1,7 @@
 /*
  * @Author: Tmier
  * @Date: 2024-03-31 20:56:24
- * @LastEditTime: 2024-03-31 21:17:44
+ * @LastEditTime: 2024-03-31 21:49:13
  * @LastEditors: Tmier
  * @Description:
  *
@@ -13,7 +13,7 @@
  * @returns
  */
 function hyphenate(str: string, flag = '-') {
-  const hyphenateReg = /([a-z])([A-Z])|([A-Z])([A-Z][a-z])/g
+  const hyphenateReg = /([a-z0-9_])([A-Z])|([A-Z])([A-Z][a-z])/g
   return str.replace(hyphenateReg, `$1$3${flag}$2$4`).toLowerCase()
 }
 export default hyphenate

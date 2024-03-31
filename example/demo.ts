@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-23 16:31:41
- * @LastEditTime: 2024-03-31 21:18:14
+ * @LastEditTime: 2024-03-31 21:50:23
  * @LastEditors: Tmier
  * @Description: 仅供测试使用
  *
@@ -66,3 +66,4 @@ import {
 // }, 1800)
 // console.log(xss('<script>alert(1)</script>')) // output: &lt;script&gt;alert(1)&lt;/script&gt;
 console.log(hyphenate('getDataFromDB', '_')) // output: get_data_from_db
+console.log(hyphenate('AaBb1Cc2Dd_Ee.Ff', '_')) // output: aa_bb1_cc2_dd__ee.ff
