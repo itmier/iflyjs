@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-13 14:50:43
- * @LastEditTime: 2024-03-31 20:43:12
+ * @LastEditTime: 2024-03-31 20:48:21
  * @LastEditors: Tmier
  * @Description:
  *
@@ -17,3 +17,4 @@ export { default as url__obj } from './url__obj'
 export { default as getTimeInterval } from './getTimeInterval'
 export { default as iflyUpload } from './iflyUpload'
 export { default as redirect } from './redirect'
+export { default as xss } from './xss'

@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-23 16:31:41
- * @LastEditTime: 2024-03-31 20:43:50
+ * @LastEditTime: 2024-03-31 20:53:04
  * @LastEditors: Tmier
  * @Description: 仅供测试使用
  *
@@ -18,7 +18,8 @@ import {
   url__obj,
   getTimeInterval,
   iflyUpload,
-  redirect
+  redirect,
+  xss
 } from '../src/main'
 
 // console.log(isCorrectType(null, 'null'))
@@ -59,6 +60,7 @@ import {
 //     })
 //   })
 // }
-setTimeout(() => {
-  redirect('https://www.baidu.com')
-}, 1800)
+// setTimeout(() => {
+//   redirect('https://www.baidu.com')
+// }, 1800)
+console.log(xss('<script>alert(1)</script>')) // output: &lt;script&gt;alert(1)&lt;/script&gt;
