@@ -3,6 +3,14 @@
 ## 使用
 
 ```js
+import { iflyUpload } from 'iflyjs'
+iflyUpload.createUpload().then((inputEle) => {})
+iflyUpload.destroy(inputEle)
+```
+
+## demo
+
+```js
 import { $, iflyUpload } from 'iflyjs'
 const dom = $('#domXY')
 if (dom instanceof Element) {

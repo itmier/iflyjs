@@ -1,7 +1,7 @@
 /*
  * @Author: Tmier
  * @Date: 2024-03-31 16:09:53
- * @LastEditTime: 2024-03-31 17:03:50
+ * @LastEditTime: 2024-03-31 17:15:31
  * @LastEditors: Tmier
  * @Description:
  *
@@ -16,7 +16,7 @@ interface ICreateUpload {
  */
 class iflyUpload {
   constructor() {}
-  static createUpload({ accept }: ICreateUpload) {
+  static createUpload({ accept }: ICreateUpload = {}) {
     const inputEle = document.createElement('input')
     inputEle.type = 'file'
     if (accept) {
