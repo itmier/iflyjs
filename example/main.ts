@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-23 16:31:41
- * @LastEditTime: 2024-03-31 15:17:12
+ * @LastEditTime: 2024-03-31 15:49:58
  * @LastEditors: Tmier
  * @Description: 仅供测试使用
  *
@@ -15,7 +15,8 @@ import {
   getDomPageXY,
   getDomScreenXY,
   obj__url,
-  url__obj
+  url__obj,
+  getTimeInterval
 } from '../src/main'
 
 // console.log(isCorrectType(null, 'null'))
@@ -32,4 +33,10 @@ import {
 // }
 // console.log(obj__url(data)) // output: type=1&id=1929929
 
-console.log(url__obj('?type=1&id=1929929&x=abc')) // output: {type: '1', id: '1929929', x: 'abc'}
+// console.log(url__obj('?type=1&id=1929929&x=abc')) // output: {type: '1', id: '1929929', x: 'abc'}
+
+const date1 = new Date()
+setTimeout(() => {
+  const date2 = new Date()
+  console.log(getTimeInterval(date1, date2))
+}, 1800) // 1.81s
