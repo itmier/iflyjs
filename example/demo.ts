@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-23 16:31:41
- * @LastEditTime: 2024-03-31 17:07:29
+ * @LastEditTime: 2024-03-31 20:43:50
  * @LastEditors: Tmier
  * @Description: 仅供测试使用
  *
@@ -17,7 +17,8 @@ import {
   obj__url,
   url__obj,
   getTimeInterval,
-  iflyUpload
+  iflyUpload,
+  redirect
 } from '../src/main'
 
 // console.log(isCorrectType(null, 'null'))
@@ -42,19 +43,22 @@ import {
 //   console.log(getTimeInterval(date1, date2))
 // }, 1800) // 1.81s
 
-const dom = $('#domXY')
-if (dom instanceof Element) {
-  dom.addEventListener('click', () => {
-    iflyUpload.createUpload({ accept: 'image/*' }).then((inputEle) => {
-      inputEle?.addEventListener('change', (e) => {
-        console.log(e)
-        iflyUpload.destroy(inputEle)
-      })
-      inputEle?.addEventListener('cancel', () => {
-        console.log('取消文件选择~')
-        iflyUpload.destroy(inputEle)
-      })
-      inputEle?.click()
-    })
-  })
-}
+// const dom = $('#domXY')
+// if (dom instanceof Element) {
+//   dom.addEventListener('click', () => {
+//     iflyUpload.createUpload({ accept: 'image/*' }).then((inputEle) => {
+//       inputEle?.addEventListener('change', (e) => {
+//         console.log(e)
+//         iflyUpload.destroy(inputEle)
+//       })
+//       inputEle?.addEventListener('cancel', () => {
+//         console.log('取消文件选择~')
+//         iflyUpload.destroy(inputEle)
+//       })
+//       inputEle?.click()
+//     })
+//   })
+// }
+setTimeout(() => {
+  redirect('https://www.baidu.com')
+}, 1800)
