@@ -18,9 +18,9 @@
     "type": "git",
     "url": "git+https://github.com/itmier/iflyjs.git"
   },
-  "homepage": "https://github.com/itmier/iflyjs",
   "author": "Tmier",
   "license": "MIT",
+  "homepage": "https://ifly.yunfei.show/",
   "files": [
     "dist"
   ],
