@@ -8,7 +8,7 @@ iflyUpload.createUpload().then((inputEle) => {})
 iflyUpload.destroy(inputEle)
 ```
 
-## demo
+## Demo
 
 ```js
 import { $, iflyUpload } from 'iflyjs'

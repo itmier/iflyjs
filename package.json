@@ -1,7 +1,7 @@
 {
   "name": "iflyjs",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "更好用的JS函数库, 值得信任的JS函数库",
   "main": "dist/iflyjs.js",
@@ -13,6 +13,17 @@
       "require": "./dist/iflyjs.umd.cjs"
     }
   },
+  "keywords": [
+    "iflyjs",
+    "ifly",
+    "JS工具库",
+    "JS函数库",
+    "js-helper",
+    "js-utils",
+    "js-tool",
+    "js-lib",
+    "lodash"
+  ],
   "publisher": "itmier@126.com",
   "repository": {
     "type": "git",
@@ -20,7 +31,7 @@
   },
   "author": "Tmier",
   "license": "MIT",
-  "homepage": "https://ifly.yunfei.show/",
+  "homepage": "https://ifly.yunfei.show",
   "files": [
     "dist"
   ],
