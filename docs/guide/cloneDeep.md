@@ -1,4 +1,4 @@
-# cloneDeep - 获取节点在 doc 上的 x, y
+# cloneDeep - 深拷贝
 
 ## 使用
 

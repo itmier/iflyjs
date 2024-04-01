@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-13 14:50:43
- * @LastEditTime: 2024-04-01 20:50:31
+ * @LastEditTime: 2024-04-01 21:21:14
  * @LastEditors: Tmier
  * @Description:
  *
@@ -20,3 +20,4 @@ export { default as redirect } from './redirect'
 export { default as xss } from './xss'
 export { default as hyphenate } from './hyphenate'
 export { default as cloneDeep } from './cloneDeep'
+export { default as array__tree } from './array__tree'
