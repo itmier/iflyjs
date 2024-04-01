@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-23 16:31:41
- * @LastEditTime: 2024-03-31 21:50:23
+ * @LastEditTime: 2024-04-01 21:00:55
  * @LastEditors: Tmier
  * @Description: 仅供测试使用
  *
@@ -20,7 +20,8 @@ import {
   iflyUpload,
   redirect,
   xss,
-  hyphenate
+  hyphenate,
+  cloneDeep
 } from '../src/main'
 
 // console.log(isCorrectType(null, 'null'))
@@ -65,5 +66,26 @@ import {
 //   redirect('https://www.baidu.com')
 // }, 1800)
 // console.log(xss('<script>alert(1)</script>')) // output: &lt;script&gt;alert(1)&lt;/script&gt;
-console.log(hyphenate('getDataFromDB', '_')) // output: get_data_from_db
-console.log(hyphenate('AaBb1Cc2Dd_Ee.Ff', '_')) // output: aa_bb1_cc2_dd__ee.ff
+
+// console.log(hyphenate('getDataFromDB', '_')) // output: get_data_from_db
+// console.log(hyphenate('AaBb1Cc2Dd_Ee.Ff', '_')) // output: aa_bb1_cc2_dd__ee.ff
+
+const a = [1, 2, 3, 4, 5]
+const b = {
+  c: 1,
+  d: '50',
+  e: a,
+  f: () => {
+    console.log(1)
+  },
+  g: null,
+  h: undefined,
+  i: Symbol('i')
+}
+const c = cloneDeep(b)
+b.c = 2
+b.e.push(2)
+a.push(6)
+console.log(a) // -> (7) [1, 2, 3, 4, 5, 2, 6]
+console.log(b) // ->{ c: 2,d: '50',e: [1, 2, 3, 4, 5, 2, 6], f: () => { console.log(1); }, g: null, h: undefined, i: Symbol(i)}
+console.log(c) // -> {c: 1, d: '50', e: [1, 2, 3, 4, 5], f: { console.log(1);, g: null, h: undefined, i: Symbol(i)}}

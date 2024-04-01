@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-13 14:50:43
- * @LastEditTime: 2024-03-31 20:48:21
+ * @LastEditTime: 2024-04-01 20:50:31
  * @LastEditors: Tmier
  * @Description:
  *
@@ -19,3 +19,4 @@ export { default as iflyUpload } from './iflyUpload'
 export { default as redirect } from './redirect'
 export { default as xss } from './xss'
 export { default as hyphenate } from './hyphenate'
+export { default as cloneDeep } from './cloneDeep'
