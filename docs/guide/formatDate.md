@@ -1,4 +1,4 @@
-# formatDate - 获取节点在 doc 上的 x, y
+# formatDate - 格式化日期
 
 ## 使用
 
