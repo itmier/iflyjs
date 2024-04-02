@@ -13,3 +13,4 @@ export { default as xss } from './xss';
 export { default as hyphenate } from './hyphenate';
 export { default as cloneDeep } from './cloneDeep';
 export { default as array__tree } from './array__tree';
+export { default as formatDate } from './formatDate';
