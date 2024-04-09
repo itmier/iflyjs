@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-23 16:31:41
- * @LastEditTime: 2024-04-09 21:14:12
+ * @LastEditTime: 2024-04-09 21:32:59
  * @LastEditors: Tmier
  * @Description: 仅供测试使用
  *
@@ -24,7 +24,8 @@ import {
   cloneDeep,
   array__tree,
   formatDate,
-  sleep
+  sleep,
+  tree__array
 } from '../src/main'
 
 // console.log(isCorrectType(null, 'null'))
@@ -153,9 +154,77 @@ import {
 // console.log('newTree', newTree)
 
 // console.log('date: ', formatDate(new Date().getTime(), 'MM.DD.YY')) // output: date:  04.02.2024
-async function test() {
-  console.log('start')
-  await sleep(1800)
-  console.log('end')
-}
-test()
+// async function test() {
+//   console.log('start')
+//   await sleep(1800)
+//   console.log('end')
+// }
+// test()
+const testData = [
+  {
+    name: '主页',
+    id: '1',
+    parentId: '0',
+    children: []
+  },
+  {
+    name: '学习天地',
+    id: '2',
+    parentId: '0',
+    children: [
+      {
+        name: '前端',
+        id: '3',
+        parentId: '2',
+        children: [
+          {
+            name: 'JavaScript',
+            id: '5',
+            parentId: '3',
+            children: [
+              {
+                name: 'Vue',
+                id: '6',
+                parentId: '5',
+                children: []
+              },
+              {
+                name: 'React',
+                id: '7',
+                parentId: '5',
+                children: []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: '后端',
+        id: '4',
+        parentId: '2',
+        children: [
+          {
+            name: 'Node',
+            id: '8',
+            parentId: '4',
+            children: []
+          },
+          {
+            name: 'Java',
+            id: '9',
+            parentId: '4',
+            children: []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: '关于我们',
+    id: '10',
+    parentId: '0',
+    children: []
+  }
+]
+const res = tree__array(testData)
+console.log(res)
