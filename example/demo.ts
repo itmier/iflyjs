@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-23 16:31:41
- * @LastEditTime: 2024-04-02 21:22:52
+ * @LastEditTime: 2024-04-09 21:14:12
  * @LastEditors: Tmier
  * @Description: 仅供测试使用
  *
@@ -23,7 +23,8 @@ import {
   hyphenate,
   cloneDeep,
   array__tree,
-  formatDate
+  formatDate,
+  sleep
 } from '../src/main'
 
 // console.log(isCorrectType(null, 'null'))
@@ -151,4 +152,10 @@ import {
 // })
 // console.log('newTree', newTree)
 
-console.log('date: ', formatDate(new Date().getTime(), 'MM.DD.YY')) // output: date:  04.02.2024
+// console.log('date: ', formatDate(new Date().getTime(), 'MM.DD.YY')) // output: date:  04.02.2024
+async function test() {
+  console.log('start')
+  await sleep(1800)
+  console.log('end')
+}
+test()

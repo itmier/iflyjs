@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-13 14:50:43
- * @LastEditTime: 2024-04-02 21:20:40
+ * @LastEditTime: 2024-04-09 21:12:45
  * @LastEditors: Tmier
  * @Description:
  *
@@ -22,3 +22,4 @@ export { default as hyphenate } from './hyphenate'
 export { default as cloneDeep } from './cloneDeep'
 export { default as array__tree } from './array__tree'
 export { default as formatDate } from './formatDate'
+export { default as sleep } from './sleep'
