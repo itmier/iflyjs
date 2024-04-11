@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-23 16:31:41
- * @LastEditTime: 2024-04-09 21:32:59
+ * @LastEditTime: 2024-04-11 21:36:17
  * @LastEditors: Tmier
  * @Description: 仅供测试使用
  *
@@ -94,64 +94,64 @@ import {
 // console.log(b) // ->{ c: 2,d: '50',e: [1, 2, 3, 4, 5, 2, 6], f: () => { console.log(1); }, g: null, h: undefined, i: Symbol(i)}
 // console.log(c) // -> {c: 1, d: '50', e: [1, 2, 3, 4, 5], f: { console.log(1);, g: null, h: undefined, i: Symbol(i)}}
 
-// const list = [
-//   {
-//     name: '主页',
-//     id: '1',
-//     parentId: '0'
-//   },
-//   {
-//     name: '学习天地',
-//     id: '2',
-//     parentId: '0'
-//   },
-//   {
-//     name: '前端',
-//     id: '3',
-//     parentId: '2'
-//   },
-//   {
-//     name: '后端',
-//     id: '4',
-//     parentId: '2'
-//   },
-//   {
-//     name: 'JavaScript',
-//     id: '5',
-//     parentId: '3'
-//   },
-//   {
-//     name: 'Vue',
-//     id: '6',
-//     parentId: '5'
-//   },
-//   {
-//     name: 'React',
-//     id: '7',
-//     parentId: '5'
-//   },
-//   {
-//     name: 'Node',
-//     id: '8',
-//     parentId: '4'
-//   },
-//   {
-//     name: 'Java',
-//     id: '9',
-//     parentId: '4'
-//   },
-//   {
-//     name: '关于我们',
-//     id: '10',
-//     parentId: '0'
-//   }
-// ]
-// const newTree = array__tree(list, {
-//   keyField: 'id',
-//   childField: 'children',
-//   parentField: 'parentId'
-// })
-// console.log('newTree', newTree)
+const list = [
+  {
+    name: '主页',
+    id: '1',
+    parentId: '0'
+  },
+  {
+    name: '学习天地',
+    id: '2',
+    parentId: '0'
+  },
+  {
+    name: '前端',
+    id: '3',
+    parentId: '2'
+  },
+  {
+    name: '后端',
+    id: '4',
+    parentId: '2'
+  },
+  {
+    name: 'JavaScript',
+    id: '5',
+    parentId: '3'
+  },
+  {
+    name: 'Vue',
+    id: '6',
+    parentId: '5'
+  },
+  {
+    name: 'React',
+    id: '7',
+    parentId: '5'
+  },
+  {
+    name: 'Node',
+    id: '8',
+    parentId: '4'
+  },
+  {
+    name: 'Java',
+    id: '9',
+    parentId: '4'
+  },
+  {
+    name: '关于我们',
+    id: '10',
+    parentId: '0'
+  }
+]
+const newTree = array__tree(list, {
+  keyField: 'id',
+  childField: 'children',
+  parentField: 'parentId'
+})
+console.log('newTree', newTree)
 
 // console.log('date: ', formatDate(new Date().getTime(), 'MM.DD.YY')) // output: date:  04.02.2024
 // async function test() {
@@ -160,71 +160,71 @@ import {
 //   console.log('end')
 // }
 // test()
-const testData = [
-  {
-    name: '主页',
-    id: '1',
-    parentId: '0',
-    children: []
-  },
-  {
-    name: '学习天地',
-    id: '2',
-    parentId: '0',
-    children: [
-      {
-        name: '前端',
-        id: '3',
-        parentId: '2',
-        children: [
-          {
-            name: 'JavaScript',
-            id: '5',
-            parentId: '3',
-            children: [
-              {
-                name: 'Vue',
-                id: '6',
-                parentId: '5',
-                children: []
-              },
-              {
-                name: 'React',
-                id: '7',
-                parentId: '5',
-                children: []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        name: '后端',
-        id: '4',
-        parentId: '2',
-        children: [
-          {
-            name: 'Node',
-            id: '8',
-            parentId: '4',
-            children: []
-          },
-          {
-            name: 'Java',
-            id: '9',
-            parentId: '4',
-            children: []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    name: '关于我们',
-    id: '10',
-    parentId: '0',
-    children: []
-  }
-]
-const res = tree__array(testData)
-console.log(res)
+// const testData = [
+//   {
+//     name: '主页',
+//     id: '1',
+//     parentId: '0',
+//     children: []
+//   },
+//   {
+//     name: '学习天地',
+//     id: '2',
+//     parentId: '0',
+//     children: [
+//       {
+//         name: '前端',
+//         id: '3',
+//         parentId: '2',
+//         children: [
+//           {
+//             name: 'JavaScript',
+//             id: '5',
+//             parentId: '3',
+//             children: [
+//               {
+//                 name: 'Vue',
+//                 id: '6',
+//                 parentId: '5',
+//                 children: []
+//               },
+//               {
+//                 name: 'React',
+//                 id: '7',
+//                 parentId: '5',
+//                 children: []
+//               }
+//             ]
+//           }
+//         ]
+//       },
+//       {
+//         name: '后端',
+//         id: '4',
+//         parentId: '2',
+//         children: [
+//           {
+//             name: 'Node',
+//             id: '8',
+//             parentId: '4',
+//             children: []
+//           },
+//           {
+//             name: 'Java',
+//             id: '9',
+//             parentId: '4',
+//             children: []
+//           }
+//         ]
+//       }
+//     ]
+//   },
+//   {
+//     name: '关于我们',
+//     id: '10',
+//     parentId: '0',
+//     children: []
+//   }
+// ]
+// const res = tree__array(testData)
+// console.log(res)
