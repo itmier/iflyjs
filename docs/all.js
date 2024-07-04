@@ -101,7 +101,7 @@ export default [
         link: '/guide/xss'
       },
       {
-        desc: 'removeEmptyProperties',
+        desc: '去除对象中的空属性',
         name: 'removeEmptyProperties',
         link: '/guide/removeEmptyProperties'
       }
