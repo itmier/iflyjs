@@ -1,7 +1,7 @@
 {
   "name": "iflyjs",
   "private": false,
-  "version": "0.1.6",
+  "version": "0.1.7",
   "type": "module",
   "description": "更好用的JS函数库, 值得信任的JS函数库",
   "main": "dist/iflyjs.js",
