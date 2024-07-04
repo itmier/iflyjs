@@ -1,7 +1,7 @@
 /*
  * @Author: Tmier
  * @Date: 2024-04-13 11:44:40
- * @LastEditTime: 2024-07-04 15:01:23
+ * @LastEditTime: 2024-07-04 16:55:10
  * @LastEditors: Tmier
  * @Description:
  *
@@ -96,9 +96,14 @@ export default [
         link: '/guide/url__obj'
       },
       {
-        desc: ' 防止 xss 攻击,转义特殊字符',
+        desc: '防止 xss 攻击,转义特殊字符',
         name: 'xss',
         link: '/guide/xss'
+      },
+      {
+        desc: 'removeEmptyProperties',
+        name: 'removeEmptyProperties',
+        link: '/guide/removeEmptyProperties'
       }
     ]
   }
