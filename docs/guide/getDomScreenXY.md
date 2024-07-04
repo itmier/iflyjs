@@ -1,4 +1,4 @@
-# getDomPageXY - 获取 dom 元素的屏幕坐标(相对于 Screen)
+# getDomScreenXY - 获取 dom 元素的屏幕坐标(相对于 Screen)
 
 ## 使用
 

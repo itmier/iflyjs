@@ -12,8 +12,8 @@
   --vp-c-brand-light: #747bff !important;
   --vp-c-brand-lighter: #9499ff !important;
   --vp-c-brand-lightest: #bcc0ff !important;
-  --vp-c-brand-dark: #535bf2 !important;
-  --vp-c-brand-darker: #454ce1 !important;
+  /* --vp-c-brand-dark: #535bf2 !important; */
+  /* --vp-c-brand-darker: #454ce1 !important; */
   --vp-c-brand-dimm: rgba(100, 108, 255, 0.08) !important;
 }
 
@@ -73,15 +73,15 @@
 
 :root {
   --vp-custom-block-tip-border: var(--vp-c-brand) !important;
-  --vp-custom-block-tip-text: var(--vp-c-brand-darker) !important;
+  /* --vp-custom-block-tip-text: var(--vp-c-brand-darker) !important; */
   --vp-custom-block-tip-bg: var(--vp-c-brand-dimm) !important;
 }
 
-.dark {
+/* .dark {
   --vp-custom-block-tip-border: var(--vp-c-brand) !important;
   --vp-custom-block-tip-text: var(--vp-c-brand-lightest) !important;
   --vp-custom-block-tip-bg: var(--vp-c-brand-dimm) !important;
-}
+} */
 
 /**
  * Component: Algolia
@@ -100,7 +100,7 @@
   Also specify some classes twice to have higher specificity
   over scoped class data attribute.
 */
-.dark .vp-doc a,
+/* .dark .vp-doc a,
 .dark .vp-doc a > code,
 .dark .VPNavBarMenuLink.VPNavBarMenuLink:hover,
 .dark .VPNavBarMenuLink.VPNavBarMenuLink.active,
@@ -109,18 +109,18 @@
 .dark .edit-link-button.edit-link-button,
 .dark .pager-link .title {
   color: var(--vp-c-brand-lighter) !important;
-}
+} */
 
-.dark .vp-doc a:hover,
+/* .dark .vp-doc a:hover,
 .dark .vp-doc a > code:hover {
   color: var(--vp-c-brand-lightest) !important;
   opacity: 1 !important;
-}
+} */
 
 /* Transition by color instead of opacity */
-.dark .vp-doc .custom-block a {
+/* .dark .vp-doc .custom-block a {
   transition: color 0.25s !important;
-}
+} */
 
 header {
   display: none;
@@ -129,8 +129,8 @@ header {
 :root {
   --ifly-scroll-thumb-color: #686868;
   --ifly-scroll-track-color: #424242;
-  --ifly-black: #000000;
-  --ifly-bg: #1e1e20;
+  /* --ifly-black: #000000; */
+  /* --ifly-bg: #1e1e20; */
 }
 
 ::-webkit-scrollbar {
@@ -155,7 +155,7 @@ header {
 
 html,
 body {
-  background: var(--ifly-bg) !important;
+  /* background: var(--ifly-bg) !important; */
 }
 
 /* .VPLocalNav {

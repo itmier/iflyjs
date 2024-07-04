@@ -1,7 +1,7 @@
 /*
  * @Author: Tmier
  * @Date: 2024-03-28 21:46:22
- * @LastEditTime: 2024-03-30 11:52:23
+ * @LastEditTime: 2024-07-04 15:08:50
  * @LastEditors: Tmier
  * @Description:
  *
@@ -15,7 +15,7 @@ export default defineConfig({
   title: 'iFlyJS',
   description: 'A JavaScript utility library',
   lastUpdated: true,
-  appearance: 'dark',
+  appearance: false,
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
     logo: '/logo.svg',
@@ -38,6 +38,10 @@ export default defineConfig({
       {
         text: '安装与使用',
         link: '/usage'
+      },
+      {
+        text: '函数索引',
+        link: '/all'
       },
       ...sidebar.getSidebar()
     ],
