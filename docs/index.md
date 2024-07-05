@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /usage
+      link: /all
     - theme: alt
       text: View on GitHub
       link: https://github.com/itmier/iflyjs

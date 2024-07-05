@@ -1,7 +1,7 @@
 /*
  * @Author: Tmier
  * @Date: 2024-03-28 21:46:22
- * @LastEditTime: 2024-07-04 15:08:50
+ * @LastEditTime: 2024-07-05 23:35:45
  * @LastEditors: Tmier
  * @Description:
  *
@@ -36,12 +36,12 @@ export default defineConfig({
         link: '/'
       },
       {
-        text: '安装与使用',
-        link: '/usage'
-      },
-      {
         text: '函数索引',
         link: '/all'
+      },
+      {
+        text: '安装与使用',
+        link: '/usage'
       },
       ...sidebar.getSidebar()
     ],
