@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-13 14:50:43
- * @LastEditTime: 2024-04-09 21:31:07
+ * @LastEditTime: 2024-07-05 18:32:36
  * @LastEditors: Tmier
  * @Description:
  *
@@ -25,3 +25,4 @@ export { default as formatDate } from './formatDate'
 export { default as sleep } from './sleep'
 export { default as tree__array } from './tree__array'
 export { default as removeEmptyProperties } from './removeEmptyProperties'
+export { default as uuid } from './uuid'

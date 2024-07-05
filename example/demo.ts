@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2023-02-23 16:31:41
- * @LastEditTime: 2024-07-04 16:43:33
+ * @LastEditTime: 2024-07-05 18:48:59
  * @LastEditors: Tmier
  * @Description: 仅供测试使用
  *
@@ -26,7 +26,8 @@ import {
   formatDate,
   sleep,
   tree__array,
-  removeEmptyProperties
+  removeEmptyProperties,
+  uuid
 } from '../src/main'
 
 // console.log(isCorrectType(null, 'null'))
@@ -229,23 +230,23 @@ import {
 // ]
 // const res = tree__array(testData)
 // console.log(res)
-const a = {
-  type: 1,
-  content: '',
-  data: [
-    {
-      type: 2,
-      content: '你好'
-    },
-    {
-      type: 3,
-      content: undefined
-    }
-  ],
-  xId: null,
-  id: undefined
-}
-console.log(removeEmptyProperties(a))
+// const a = {
+//   type: 1,
+//   content: '',
+//   data: [
+//     {
+//       type: 2,
+//       content: '你好'
+//     },
+//     {
+//       type: 3,
+//       content: undefined
+//     }
+//   ],
+//   xId: null,
+//   id: undefined
+// }
+// console.log(removeEmptyProperties(a))
 // output
 // {
 //   "type": 1,
@@ -259,3 +260,13 @@ console.log(removeEmptyProperties(a))
 //       }
 //   ]
 // }
+let x = []
+for (let i = 0; i < 10000; i++) {
+  // let re = uuid.randomNum(20)
+  let re = uuid.randomStr(6)
+  console.log(re)
+  x.push(re)
+}
+const eee = new Set(x)
+console.log(x.length) // 10000
+console.log(eee.size) // 10000

@@ -19,3 +19,4 @@
 - [url__obj: 将 url 参数转换为对象](/guide/url__obj)
 - [xss: 防止 xss 攻击,转义特殊字符](/guide/xss)
 - [removeEmptyProperties: 去除对象中的空属性](/guide/removeEmptyProperties)
+- [uuid: 实现随机数](/guide/uuid)

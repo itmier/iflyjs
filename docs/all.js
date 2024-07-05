@@ -1,7 +1,7 @@
 /*
  * @Author: Tmier
  * @Date: 2024-04-13 11:44:40
- * @LastEditTime: 2024-07-04 16:55:10
+ * @LastEditTime: 2024-07-05 23:17:07
  * @LastEditors: Tmier
  * @Description:
  *
@@ -104,6 +104,11 @@ export default [
         desc: '去除对象中的空属性',
         name: 'removeEmptyProperties',
         link: '/guide/removeEmptyProperties'
+      },
+      {
+        desc: '实现随机数',
+        name: 'uuid',
+        link: '/guide/uuid'
       }
     ]
   }
